@@ -1,47 +1,50 @@
-
-
-
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container my-5">
-  <h1 class="text-center text-primary mb-4">Contact Us</h1>
+<div class="container my-5 text-center" style="color: black;">
+
+  <!-- Heading -->
+  <h1 class="mb-4" style="color: blue;">Contact Us</h1>
 
   <!-- Intro Message -->
-  <p class="lead text-center mb-4">
+  <p class="lead mb-5" style="color: black;">
     We’d love to hear from you! Whether you have a question about services, pricing, demos, or anything else — our team is ready to help.
   </p>
 
   <!-- Contact Details -->
-  <div class="row mb-5">
+  <div class="row justify-content-center mb-5">
     <div class="col-md-6">
-      <p><i data-lucide="mail"></i> <strong>Email:</strong> <a href="mailto:contact@cloudnest.com">contact@cloudnest.com</a></p>
-      <p><i data-lucide="phone"></i> <strong>Phone:</strong> +91-XXXXXXXXXX</p>
-      <p><i data-lucide="message-square"></i> <strong>Live Chat:</strong> Mon–Fri, 9:00 AM – 6:00 PM IST</p>
-      <p><i data-lucide="map-pin"></i> <strong>Address:</strong> CloudNest HQ, Sector 5, Noida, India</p>
+      <p style="color: black;"><i data-lucide="mail"></i> <strong>Email:</strong> <a href="mailto:contact@cloudnest.com">contact@cloudnest.com</a></p>
+      <p style="color: black;"><i data-lucide="phone"></i> <strong>Phone:</strong> +91-XXXXXXXXXX</p>
+      <p style="color: black;"><i data-lucide="message-square"></i> <strong>Live Chat:</strong> Mon–Fri, 9:00 AM – 6:00 PM IST</p>
+      <p style="color: black;"><i data-lucide="map-pin"></i> <strong>Address:</strong> CloudNest HQ, Sector 5, Noida, India</p>
     </div>
+  </div>
 
-    <!-- Contact Form -->
+  <!-- Contact Form -->
+  <div class="row justify-content-center mb-5">
     <div class="col-md-6">
       <form method="POST" action="">
         {% csrf_token %}
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
+        <div class="mb-3 text-start">
+          <label for="name" class="form-label" style="color: black;">Name</label>
           <input type="text" name="name" class="form-control" required />
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
+        <div class="mb-3 text-start">
+          <label for="email" class="form-label" style="color: black;">Email</label>
           <input type="email" name="email" class="form-control" required />
         </div>
-        <div class="mb-3">
-          <label for="subject" class="form-label">Subject</label>
+        <div class="mb-3 text-start">
+          <label for="subject" class="form-label" style="color: black;">Subject</label>
           <input type="text" name="subject" class="form-control" required />
         </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
+        <div class="mb-3 text-start">
+          <label for="message" class="form-label" style="color: black;">Message</label>
           <textarea name="message" rows="4" class="form-control" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary px-4">Send Message</button>
+        </div>
       </form>
     </div>
   </div>
@@ -56,19 +59,15 @@
   </div>
 
   <!-- Social Links -->
-  <div class="text-center">
+  <div class="text-center" style="color: black;">
     <p>Follow us:</p>
-    <a href="#" target="_blank" class="mx-2">LinkedIn</a> |
-    <a href="#" target="_blank" class="mx-2">Twitter</a> |
-    
+    <a href="#" class="mx-2">LinkedIn</a> |
+    <a href="#" class="mx-2">Twitter</a>
   </div>
 </div>
 
-<!-- Load Lucide icons -->
+<!-- Lucide Icons -->
 <script>
   lucide.createIcons();
 </script>
-
-
-
 {% endblock %}

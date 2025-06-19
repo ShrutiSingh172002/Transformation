@@ -1,0 +1,261 @@
+2025-04-18 00:27:29,537 - app_logger - INFO - Started: process_transformation
+2025-04-18 00:27:29,538 - app_logger - INFO - Collecting Transformation Details From DB
+2025-04-18 00:27:29,539 - app_logger - INFO - Started: fetch_transformation_details
+2025-04-18 00:27:29,540 - app_logger - INFO - Started: get_sqlalchemy_connection
+2025-04-18 00:27:29,641 - app_logger - INFO - Completed: get_sqlalchemy_connection in 0.10 seconds
+2025-04-18 00:27:29,641 - app_logger - INFO - SQL Connection Establish for to featch Transformation Details
+2025-04-18 00:27:34,944 - app_logger - INFO - Completed: fetch_transformation_details in 5.41 seconds
+2025-04-18 00:27:34,945 - app_logger - INFO - Collecting ECC Field Mapping From DB
+2025-04-18 00:27:34,949 - app_logger - INFO - Started: fetch_ecc_mapping
+2025-04-18 00:27:34,951 - app_logger - INFO - Started: get_sqlalchemy_connection
+2025-04-18 00:27:34,958 - app_logger - INFO - Completed: get_sqlalchemy_connection in 0.01 seconds
+2025-04-18 00:27:34,959 - app_logger - INFO - SQL Connection Establish for to featch ECC Mapping
+2025-04-18 00:27:39,507 - app_logger - INFO - Completed: fetch_ecc_mapping in 4.56 seconds
+2025-04-18 00:27:39,508 - app_logger - INFO - Details Collected from DB For ECC Field Mapping
+2025-04-18 00:27:39,510 - app_logger - INFO - Collecting ECC Transformation Rule From DB
+2025-04-18 00:27:39,512 - app_logger - INFO - Started: get_sqlalchemy_connection
+2025-04-18 00:27:39,516 - app_logger - INFO - Completed: get_sqlalchemy_connection in 0.00 seconds
+2025-04-18 00:27:39,520 - app_logger - INFO - SQL Connection Establish for to featch Transformation Rule
+2025-04-18 00:27:42,384 - app_logger - INFO - Started: thread_extract_data_from_sap
+2025-04-18 00:27:43,885 - app_logger - INFO - Connected to SAP successfully. for table Process: SKAT
+2025-04-18 00:27:43,886 - app_logger - INFO - Connected to SAP successfully. for table Process: SKAS
+2025-04-18 00:27:43,886 - app_logger - INFO - Connected to SAP successfully. for table Process: SKA1
+2025-04-18 00:27:46,576 - app_logger - INFO - Total 255 rows fetched from table SKAS.
+2025-04-18 00:27:47,931 - app_logger - INFO - Connected to SAP successfully. for table Process: SKB1
+2025-04-18 00:27:53,158 - app_logger - INFO - Total 18581 rows fetched from table SKA1.
+2025-04-18 00:27:55,090 - app_logger - INFO - Connected to SAP successfully. for table Process: CSKB
+2025-04-18 00:27:58,392 - app_logger - INFO - Total 5040 rows fetched from table CSKB.
+2025-04-18 00:28:10,714 - app_logger - INFO - Total 36680 rows fetched from table SKAT.
+2025-04-18 00:28:17,492 - app_logger - INFO - Total 32961 rows fetched from table SKB1.
+2025-04-18 00:28:17,506 - app_logger - INFO - Completed: thread_extract_data_from_sap in 35.12 seconds
+2025-04-18 00:28:17,507 - app_logger - INFO - Started: table_mapping_parallel
+2025-04-18 00:28:17,507 - app_logger - INFO - Starting table_mapping_parallel function.
+2025-04-18 00:28:17,662 - app_logger - INFO - table_mapping_parallel: Required Columns Extracted
+2025-04-18 00:28:17,664 - app_logger - INFO - table_mapping_parallel: Set num_workers 3
+2025-04-18 00:28:20,381 - app_logger - INFO - Processing TargetTable: Account Keywords
+2025-04-18 00:28:20,391 - app_logger - INFO - Completed mapping for TargetTable: Account Keywords
+2025-04-18 00:28:20,974 - app_logger - INFO - Processing TargetTable: Account Names
+2025-04-18 00:28:20,985 - app_logger - INFO - Completed mapping for TargetTable: Account Names
+2025-04-18 00:28:21,499 - app_logger - INFO - Processing TargetTable: Company Code Data
+2025-04-18 00:28:21,708 - app_logger - DEBUG - Merged SKA1 into Company Code Data on ['SAKNR']
+2025-04-18 00:28:21,709 - app_logger - INFO - Completed mapping for TargetTable: Company Code Data
+2025-04-18 00:28:22,158 - app_logger - INFO - Processing TargetTable: Controlling Area Data
+2025-04-18 00:28:22,194 - app_logger - DEBUG - Merged SKA1 into Controlling Area Data on ['SAKNR']
+2025-04-18 00:28:22,195 - app_logger - INFO - Completed mapping for TargetTable: Controlling Area Data
+2025-04-18 00:28:22,715 - app_logger - INFO - Processing TargetTable: General Data
+2025-04-18 00:28:22,725 - app_logger - INFO - Completed mapping for TargetTable: General Data
+2025-04-18 00:28:23,216 - app_logger - INFO - table_mapping_parallel: Process Completed 
+2025-04-18 00:28:23,217 - app_logger - INFO - table mapping completed successfully.
+2025-04-18 00:28:23,218 - app_logger - INFO - Completed: table_mapping_parallel in 5.71 seconds
+2025-04-18 00:28:23,218 - app_logger - INFO - Started: processs_transformation_rule
+2025-04-18 00:28:23,291 - app_logger - INFO - Completed: processs_transformation_rule in 0.07 seconds
+2025-04-18 00:28:23,292 - app_logger - INFO - Started: write_multiple_sheets_to_excel
+2025-04-18 00:28:23,292 - app_logger - INFO - Starting write_multiple_sheets_to_excel...
+2025-04-18 00:28:25,473 - app_logger - INFO - Processing sheet: Account Keywords
+2025-04-18 00:28:26,718 - app_logger - INFO - Finished writing 255 rows to sheet 'Account Keywords'.
+2025-04-18 00:28:26,722 - app_logger - INFO - Processing sheet: Account Names
+2025-04-18 00:28:29,635 - app_logger - INFO - Finished writing 36680 rows to sheet 'Account Names'.
+2025-04-18 00:28:29,636 - app_logger - INFO - Processing sheet: Controlling Area Data
+2025-04-18 00:28:30,373 - app_logger - INFO - Finished writing 12131 rows to sheet 'Controlling Area Data'.
+2025-04-18 00:28:30,373 - app_logger - INFO - Processing sheet: Company Code Data
+2025-04-18 00:28:43,742 - app_logger - INFO - Finished writing 89491 rows to sheet 'Company Code Data'.
+2025-04-18 00:28:43,743 - app_logger - INFO - Processing sheet: General Data
+2025-04-18 00:28:44,675 - app_logger - INFO - Finished writing 18581 rows to sheet 'General Data'.
+2025-04-18 00:29:00,800 - app_logger - INFO - All sheets written successfully. File saved at: C:\Users\sandi.DESKTOP-USCI9LH\INNOVAPTE\DataVapte - Documents\DataVapte App\Document\Transformation\Transformation Exe\OutPut\FI_GL_Accounts_OutPut.xml
+2025-04-18 00:29:01,672 - app_logger - INFO - Successfully Cleanup in writing template
+2025-04-18 00:29:01,673 - app_logger - INFO - Completed: write_multiple_sheets_to_excel in 38.38 seconds
+2025-04-18 00:29:01,674 - app_logger - INFO - Started: XMLSplitter
+2025-04-18 00:29:01,674 - app_logger - INFO - Entered into XMLSplitter Fucnction for Split
+2025-04-18 00:29:01,675 - app_logger - INFO - File Size: 243.7 MB
+2025-04-18 00:29:01,676 - app_logger - INFO - XML File Path: C:\USERS\SANDI.DESKTOP-USCI9LH\INNOVAPTE\DATAVAPTE - DOCUMENTS\DATAVAPTE APP\DOCUMENT\TRANSFORMATION\TRANSFORMATION EXE\OUTPUT\FI_GL_ACCOUNTS_OUTPUT.XML
+2025-04-18 00:29:01,677 - app_logger - INFO - Number of File: 2
+2025-04-18 00:29:01,678 - app_logger - INFO - File more than 1 count
+2025-04-18 00:32:23,731 - app_logger - INFO - Completed: XMLSplitter in 202.06 seconds
+2025-04-18 00:32:23,853 - app_logger - INFO - Completed: process_transformation in 294.32 seconds
+2025-04-18 00:32:23,854 - app_logger - INFO - Process Completed in Total Time: 294.3165216445923
+2025-04-18 01:13:05,684 - app_logger - INFO - Started: process_transformation
+2025-04-18 01:13:05,684 - app_logger - INFO - Collecting Transformation Details From DB
+2025-04-18 01:13:05,685 - app_logger - INFO - Started: fetch_transformation_details
+2025-04-18 01:13:05,685 - app_logger - INFO - Started: get_sqlalchemy_connection
+2025-04-18 01:13:05,744 - app_logger - INFO - Completed: get_sqlalchemy_connection in 0.06 seconds
+2025-04-18 01:13:05,744 - app_logger - INFO - SQL Connection Establish for to featch Transformation Details
+2025-04-18 01:13:10,928 - app_logger - INFO - Completed: fetch_transformation_details in 5.24 seconds
+2025-04-18 01:13:10,929 - app_logger - INFO - Collecting ECC Field Mapping From DB
+2025-04-18 01:13:10,929 - app_logger - INFO - Started: fetch_ecc_mapping
+2025-04-18 01:13:10,929 - app_logger - INFO - Started: get_sqlalchemy_connection
+2025-04-18 01:13:10,932 - app_logger - INFO - Completed: get_sqlalchemy_connection in 0.00 seconds
+2025-04-18 01:13:10,933 - app_logger - INFO - SQL Connection Establish for to featch ECC Mapping
+2025-04-18 01:13:14,851 - app_logger - INFO - Completed: fetch_ecc_mapping in 3.92 seconds
+2025-04-18 01:13:14,851 - app_logger - INFO - Details Collected from DB For ECC Field Mapping
+2025-04-18 01:13:14,852 - app_logger - INFO - Collecting ECC Transformation Rule From DB
+2025-04-18 01:13:14,852 - app_logger - INFO - Started: get_sqlalchemy_connection
+2025-04-18 01:13:14,853 - app_logger - INFO - Completed: get_sqlalchemy_connection in 0.00 seconds
+2025-04-18 01:13:14,853 - app_logger - INFO - SQL Connection Establish for to featch Transformation Rule
+2025-04-18 01:13:19,132 - app_logger - INFO - Started: thread_extract_data_from_sap
+2025-04-18 01:13:20,764 - app_logger - INFO - Connected to SAP successfully. for table Process: SKAS
+2025-04-18 01:13:20,764 - app_logger - INFO - Connected to SAP successfully. for table Process: SKAT
+2025-04-18 01:13:22,616 - app_logger - INFO - Connected to SAP successfully. for table Process: SKA1
+2025-04-18 01:13:23,165 - app_logger - INFO - Total 255 rows fetched from table SKAS.
+2025-04-18 01:13:24,487 - app_logger - INFO - Connected to SAP successfully. for table Process: SKB1
+2025-04-18 01:13:29,963 - app_logger - INFO - Total 18581 rows fetched from table SKA1.
+2025-04-18 01:13:31,279 - app_logger - INFO - Connected to SAP successfully. for table Process: CSKB
+2025-04-18 01:13:33,670 - app_logger - INFO - Total 5040 rows fetched from table CSKB.
+2025-04-18 01:13:43,969 - app_logger - INFO - Total 36680 rows fetched from table SKAT.
+2025-04-18 01:13:51,110 - app_logger - INFO - Total 32961 rows fetched from table SKB1.
+2025-04-18 01:13:51,133 - app_logger - INFO - Completed: thread_extract_data_from_sap in 32.00 seconds
+2025-04-18 01:13:51,134 - app_logger - INFO - Started: table_mapping_parallel
+2025-04-18 01:13:51,135 - app_logger - INFO - Starting table_mapping_parallel function.
+2025-04-18 01:13:51,139 - app_logger - INFO - table_mapping_parallel: Required Columns Extracted
+2025-04-18 01:13:51,139 - app_logger - INFO - table_mapping_parallel: Set num_workers 3
+2025-04-18 01:13:53,671 - app_logger - INFO - Processing TargetTable: Account Keywords
+2025-04-18 01:13:53,678 - app_logger - INFO - Completed mapping for TargetTable: Account Keywords
+2025-04-18 01:13:54,300 - app_logger - INFO - Processing TargetTable: Account Names
+2025-04-18 01:13:54,310 - app_logger - INFO - Completed mapping for TargetTable: Account Names
+2025-04-18 01:13:54,827 - app_logger - INFO - Processing TargetTable: Company Code Data
+2025-04-18 01:13:54,993 - app_logger - DEBUG - Merged SKA1 into Company Code Data on ['SAKNR']
+2025-04-18 01:13:54,993 - app_logger - INFO - Completed mapping for TargetTable: Company Code Data
+2025-04-18 01:13:55,503 - app_logger - INFO - Processing TargetTable: Controlling Area Data
+2025-04-18 01:13:55,543 - app_logger - DEBUG - Merged SKA1 into Controlling Area Data on ['SAKNR']
+2025-04-18 01:13:55,543 - app_logger - INFO - Completed mapping for TargetTable: Controlling Area Data
+2025-04-18 01:13:56,094 - app_logger - INFO - Processing TargetTable: General Data
+2025-04-18 01:13:56,104 - app_logger - INFO - Completed mapping for TargetTable: General Data
+2025-04-18 01:13:56,473 - app_logger - INFO - table_mapping_parallel: Process Completed 
+2025-04-18 01:13:56,473 - app_logger - INFO - table mapping completed successfully.
+2025-04-18 01:13:56,474 - app_logger - INFO - Completed: table_mapping_parallel in 5.34 seconds
+2025-04-18 01:13:56,474 - app_logger - INFO - Started: processs_transformation_rule
+2025-04-18 01:13:56,543 - app_logger - INFO - Completed: processs_transformation_rule in 0.07 seconds
+2025-04-18 01:13:56,544 - app_logger - INFO - Started: write_multiple_sheets_to_excel
+2025-04-18 01:13:56,544 - app_logger - INFO - Starting write_multiple_sheets_to_excel...
+2025-04-18 01:13:57,067 - app_logger - INFO - Processing sheet: Account Keywords
+2025-04-18 01:13:57,298 - app_logger - INFO - Finished writing 255 rows to sheet 'Account Keywords'.
+2025-04-18 01:13:57,368 - app_logger - INFO - Processing sheet: Account Names
+2025-04-18 01:14:00,181 - app_logger - INFO - Finished writing 36680 rows to sheet 'Account Names'.
+2025-04-18 01:14:00,181 - app_logger - INFO - Processing sheet: Controlling Area Data
+2025-04-18 01:14:00,650 - app_logger - INFO - Finished writing 12131 rows to sheet 'Controlling Area Data'.
+2025-04-18 01:14:00,651 - app_logger - INFO - Processing sheet: Company Code Data
+2025-04-18 01:14:13,785 - app_logger - INFO - Finished writing 89491 rows to sheet 'Company Code Data'.
+2025-04-18 01:14:13,785 - app_logger - INFO - Processing sheet: General Data
+2025-04-18 01:14:14,717 - app_logger - INFO - Finished writing 18581 rows to sheet 'General Data'.
+2025-04-18 01:14:22,888 - app_logger - INFO - All sheets written successfully. File saved at: C:\Users\sandi.DESKTOP-USCI9LH\OneDrive\Desktop\OutPut\FI_GL_Accounts_OutPut.xml
+2025-04-18 01:14:24,212 - app_logger - INFO - Successfully Cleanup in writing template
+2025-04-18 01:14:24,264 - app_logger - INFO - Completed: write_multiple_sheets_to_excel in 27.72 seconds
+2025-04-18 01:14:24,303 - app_logger - INFO - Started: XMLSplitter
+2025-04-18 01:14:24,337 - app_logger - INFO - Entered into XMLSplitter Fucnction for Split
+2025-04-18 01:14:24,355 - app_logger - INFO - File Size: 243.7 MB
+2025-04-18 01:14:24,357 - app_logger - INFO - XML File Path: C:\USERS\SANDI.DESKTOP-USCI9LH\ONEDRIVE\DESKTOP\OUTPUT\FI_GL_ACCOUNTS_OUTPUT.XML
+2025-04-18 01:14:24,367 - app_logger - INFO - Number of File: 2
+2025-04-18 01:14:24,369 - app_logger - INFO - File more than 1 count
+2025-04-18 01:18:14,292 - app_logger - INFO - Completed: XMLSplitter in 229.99 seconds
+2025-04-18 01:18:14,429 - app_logger - INFO - Completed: process_transformation in 308.75 seconds
+2025-04-18 01:18:14,430 - app_logger - INFO - Process Completed in Total Time: 308.74640440940857
+2025-04-18 01:24:11,024 - app_logger - INFO - Started: process_transformation
+2025-04-18 01:24:11,025 - app_logger - INFO - Collecting Transformation Details From DB
+2025-04-18 01:24:11,026 - app_logger - INFO - Started: fetch_transformation_details
+2025-04-18 01:24:11,026 - app_logger - INFO - Started: get_sqlalchemy_connection
+2025-04-18 01:24:11,068 - app_logger - INFO - Completed: get_sqlalchemy_connection in 0.04 seconds
+2025-04-18 01:24:11,068 - app_logger - INFO - SQL Connection Establish for to featch Transformation Details
+2025-04-18 01:24:16,239 - app_logger - INFO - Completed: fetch_transformation_details in 5.21 seconds
+2025-04-18 01:24:16,239 - app_logger - INFO - Collecting ECC Field Mapping From DB
+2025-04-18 01:24:16,239 - app_logger - INFO - Started: fetch_ecc_mapping
+2025-04-18 01:24:16,239 - app_logger - INFO - Started: get_sqlalchemy_connection
+2025-04-18 01:24:16,239 - app_logger - INFO - Completed: get_sqlalchemy_connection in 0.00 seconds
+2025-04-18 01:24:16,252 - app_logger - INFO - SQL Connection Establish for to featch ECC Mapping
+2025-04-18 01:24:20,286 - app_logger - INFO - Completed: fetch_ecc_mapping in 4.05 seconds
+2025-04-18 01:24:20,301 - app_logger - INFO - Details Collected from DB For ECC Field Mapping
+2025-04-18 01:24:20,301 - app_logger - INFO - Collecting ECC Transformation Rule From DB
+2025-04-18 01:24:20,301 - app_logger - INFO - Started: get_sqlalchemy_connection
+2025-04-18 01:24:20,301 - app_logger - INFO - Completed: get_sqlalchemy_connection in 0.00 seconds
+2025-04-18 01:24:20,301 - app_logger - INFO - SQL Connection Establish for to featch Transformation Rule
+2025-04-18 01:24:24,722 - app_logger - INFO - Started: thread_extract_data_from_sap
+2025-04-18 01:24:26,227 - app_logger - INFO - Connected to SAP successfully. for table Process: SKAT
+2025-04-18 01:24:26,227 - app_logger - INFO - Connected to SAP successfully. for table Process: SKA1
+2025-04-18 01:24:28,109 - app_logger - INFO - Connected to SAP successfully. for table Process: SKAS
+2025-04-18 01:24:28,667 - app_logger - INFO - Total 255 rows fetched from table SKAS.
+2025-04-18 01:24:29,969 - app_logger - INFO - Connected to SAP successfully. for table Process: SKB1
+2025-04-18 01:24:35,558 - app_logger - INFO - Total 18581 rows fetched from table SKA1.
+2025-04-18 01:24:36,852 - app_logger - INFO - Connected to SAP successfully. for table Process: CSKB
+2025-04-18 01:24:39,571 - app_logger - INFO - Total 5040 rows fetched from table CSKB.
+2025-04-18 01:24:53,071 - app_logger - INFO - Total 36680 rows fetched from table SKAT.
+2025-04-18 01:24:57,713 - app_logger - INFO - Total 32961 rows fetched from table SKB1.
+2025-04-18 01:24:57,729 - app_logger - INFO - Completed: thread_extract_data_from_sap in 33.01 seconds
+2025-04-18 01:24:57,729 - app_logger - INFO - Started: table_mapping_parallel
+2025-04-18 01:24:57,729 - app_logger - INFO - Starting table_mapping_parallel function.
+2025-04-18 01:24:57,736 - app_logger - INFO - table_mapping_parallel: Required Columns Extracted
+2025-04-18 01:24:57,736 - app_logger - INFO - table_mapping_parallel: Set num_workers 3
+2025-04-18 01:25:00,330 - app_logger - INFO - Processing TargetTable: Account Keywords
+2025-04-18 01:25:00,332 - app_logger - INFO - Completed mapping for TargetTable: Account Keywords
+2025-04-18 01:25:00,842 - app_logger - INFO - Processing TargetTable: Account Names
+2025-04-18 01:25:00,855 - app_logger - INFO - Completed mapping for TargetTable: Account Names
+2025-04-18 01:25:01,359 - app_logger - INFO - Processing TargetTable: Company Code Data
+2025-04-18 01:25:01,527 - app_logger - DEBUG - Merged SKA1 into Company Code Data on ['SAKNR']
+2025-04-18 01:25:01,527 - app_logger - INFO - Completed mapping for TargetTable: Company Code Data
+2025-04-18 01:25:02,009 - app_logger - INFO - Processing TargetTable: Controlling Area Data
+2025-04-18 01:25:02,034 - app_logger - DEBUG - Merged SKA1 into Controlling Area Data on ['SAKNR']
+2025-04-18 01:25:02,034 - app_logger - INFO - Completed mapping for TargetTable: Controlling Area Data
+2025-04-18 01:25:02,584 - app_logger - INFO - Processing TargetTable: General Data
+2025-04-18 01:25:02,599 - app_logger - INFO - Completed mapping for TargetTable: General Data
+2025-04-18 01:25:02,951 - app_logger - INFO - table_mapping_parallel: Process Completed 
+2025-04-18 01:25:02,951 - app_logger - INFO - table mapping completed successfully.
+2025-04-18 01:25:02,951 - app_logger - INFO - Completed: table_mapping_parallel in 5.22 seconds
+2025-04-18 01:25:02,951 - app_logger - INFO - Started: processs_transformation_rule
+2025-04-18 01:25:03,001 - app_logger - INFO - Completed: processs_transformation_rule in 0.05 seconds
+2025-04-18 01:25:03,001 - app_logger - INFO - Started: write_multiple_sheets_to_excel
+2025-04-18 01:25:03,001 - app_logger - INFO - Starting write_multiple_sheets_to_excel...
+2025-04-18 01:25:03,180 - app_logger - INFO - Processing sheet: Account Keywords
+2025-04-18 01:25:03,381 - app_logger - INFO - Finished writing 255 rows to sheet 'Account Keywords'.
+2025-04-18 01:25:03,412 - app_logger - INFO - Processing sheet: Account Names
+2025-04-18 01:25:06,115 - app_logger - INFO - Finished writing 36680 rows to sheet 'Account Names'.
+2025-04-18 01:25:06,115 - app_logger - INFO - Processing sheet: Controlling Area Data
+2025-04-18 01:25:06,581 - app_logger - INFO - Finished writing 12131 rows to sheet 'Controlling Area Data'.
+2025-04-18 01:25:06,581 - app_logger - INFO - Processing sheet: Company Code Data
+2025-04-18 01:25:19,194 - app_logger - INFO - Finished writing 89491 rows to sheet 'Company Code Data'.
+2025-04-18 01:25:19,194 - app_logger - INFO - Processing sheet: General Data
+2025-04-18 01:25:20,115 - app_logger - INFO - Finished writing 18581 rows to sheet 'General Data'.
+2025-04-18 01:25:28,492 - app_logger - INFO - All sheets written successfully. File saved at: C:\Users\sandi.DESKTOP-USCI9LH\OneDrive\Desktop\OutPut\FI_GL_Accounts_OutPut.xml
+2025-04-18 01:25:29,232 - app_logger - INFO - Successfully Cleanup in writing template
+2025-04-18 01:25:29,232 - app_logger - INFO - Completed: write_multiple_sheets_to_excel in 26.23 seconds
+2025-04-18 01:25:29,232 - app_logger - INFO - Started: XMLSplitter
+2025-04-18 01:25:29,232 - app_logger - INFO - Entered into XMLSplitter Fucnction for Split
+2025-04-18 01:25:29,280 - app_logger - INFO - File Size: 243.7 MB
+2025-04-18 01:25:29,282 - app_logger - INFO - XML File Path: C:\USERS\SANDI.DESKTOP-USCI9LH\ONEDRIVE\DESKTOP\OUTPUT\FI_GL_ACCOUNTS_OUTPUT.XML
+2025-04-18 01:25:29,286 - app_logger - INFO - Number of File: 2
+2025-04-18 01:25:29,289 - app_logger - INFO - File more than 1 count
+2025-04-18 01:30:36,285 - app_logger - INFO - Completed: XMLSplitter in 307.05 seconds
+2025-04-18 01:30:36,432 - app_logger - INFO - Completed: process_transformation in 385.41 seconds
+2025-04-18 01:30:36,433 - app_logger - INFO - Process Completed in Total Time: 385.40979981422424
+2025-04-18 01:41:55,571 - app_logger - INFO - Started: process_transformation
+2025-04-18 01:41:55,572 - app_logger - INFO - Collecting Transformation Details From DB
+2025-04-18 01:41:55,573 - app_logger - INFO - Started: fetch_transformation_details
+2025-04-18 01:41:55,573 - app_logger - INFO - Started: get_sqlalchemy_connection
+2025-04-18 01:41:55,654 - app_logger - INFO - Completed: get_sqlalchemy_connection in 0.08 seconds
+2025-04-18 01:41:55,654 - app_logger - INFO - SQL Connection Establish for to featch Transformation Details
+2025-04-18 01:42:00,838 - app_logger - INFO - Completed: fetch_transformation_details in 5.26 seconds
+2025-04-18 01:42:00,838 - app_logger - INFO - Collecting ECC Field Mapping From DB
+2025-04-18 01:42:00,838 - app_logger - INFO - Started: fetch_ecc_mapping
+2025-04-18 01:42:00,838 - app_logger - INFO - Started: get_sqlalchemy_connection
+2025-04-18 01:42:00,853 - app_logger - INFO - Completed: get_sqlalchemy_connection in 0.02 seconds
+2025-04-18 01:42:00,853 - app_logger - INFO - SQL Connection Establish for to featch ECC Mapping
+2025-04-18 01:42:04,602 - app_logger - INFO - Completed: fetch_ecc_mapping in 3.76 seconds
+2025-04-18 01:42:04,602 - app_logger - INFO - Details Collected from DB For ECC Field Mapping
+2025-04-18 01:42:04,602 - app_logger - INFO - Collecting ECC Transformation Rule From DB
+2025-04-18 01:42:04,602 - app_logger - INFO - Started: get_sqlalchemy_connection
+2025-04-18 01:42:04,602 - app_logger - INFO - Completed: get_sqlalchemy_connection in 0.00 seconds
+2025-04-18 01:42:04,602 - app_logger - INFO - SQL Connection Establish for to featch Transformation Rule
+2025-04-18 01:42:08,852 - app_logger - INFO - Started: thread_extract_data_from_sap
+2025-04-18 01:42:10,261 - app_logger - INFO - Connected to SAP successfully. for table Process: SKAS
+2025-04-18 01:42:12,378 - app_logger - INFO - Connected to SAP successfully. for table Process: SKAT
+2025-04-18 01:42:12,378 - app_logger - INFO - Connected to SAP successfully. for table Process: SKA1
+2025-04-18 01:42:12,897 - app_logger - INFO - Total 255 rows fetched from table SKAS.
+2025-04-18 01:42:14,183 - app_logger - INFO - Connected to SAP successfully. for table Process: SKB1
+2025-04-18 01:42:19,764 - app_logger - INFO - Total 18581 rows fetched from table SKA1.
+2025-04-18 01:42:21,066 - app_logger - INFO - Connected to SAP successfully. for table Process: CSKB
+2025-04-18 01:42:23,793 - app_logger - INFO - Total 5040 rows fetched from table CSKB.
+2025-04-18 01:42:37,702 - app_logger - INFO - Total 36680 rows fetched from table SKAT.
+2025-04-18 01:42:40,885 - app_logger - INFO - Total 32961 rows fetched from table SKB1.
+2025-04-18 01:42:40,904 - app_logger - INFO - Completed: thread_extract_data_from_sap in 32.05 seconds
+2025-04-18 01:42:40,905 - app_logger - INFO - Started: table_mapping_parallel
+2025-04-18 01:42:40,906 - app_logger - INFO - Starting table_mapping_parallel function.
+2025-04-18 01:42:40,908 - app_logger - INFO - table_mapping_parallel: Required Columns Extracted
+2025-04-18 01:42:40,908 - app_logger - INFO - table_mapping_parallel: Set num_workers 3
+2025-04-18 01:42:44,247 - app_logger - INFO - Processing TargetTable: Account Keywords
+2025-04-18 01:42:44,263 - app_logger - INFO - Completed mapping for TargetTable: Account Keywords
