@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Services - MyCompany{% endblock %}
+
+{% block content %}
+  <div class="section sky"></div>
+  <div class="service-section">
+  <div class="service-card">
+    <h2 style="color: blue; text-align: center;">Our Services</h2>
+    <br>
+    <br>
+
+    <p style="color: black;text-align: center;">
+      Transform your Excel data to HANAAS format seamlessly. Get structured, secure, and scalable data integration—available only for licensed users.
+    </p>
+    <br>
+    <br>
+    
+    <a href="{% url 'transformation_login' %}">
+      <div style="text-align: center;">
+  <a href="{% url 'transformation_login' %}">
+    <button style="background-color: yellow; color: black; padding: 10px 20px; border: none; cursor: pointer;">
+      Access the Project
+    </button>
+  </a>
+</div>
+
+    </a>
+  </div>
+</div>
+
+  <div class="section white"></div>
+  <div class="section sky"></div>
+  <div class="section white"></div>
+  <div class="section sky"></div>
+{% endblock %}

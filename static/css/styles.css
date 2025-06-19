@@ -1,0 +1,135 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+/* Header */
+.header {
+  background-color: skyblue;
+  color: black;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  height: 70px;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Right section */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Nav links */
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+/* User Menu */
+.user-menu {
+  position: relative;
+}
+
+.user-icon {
+  font-size: 22px;
+  cursor: pointer;
+  color: black;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+.user-menu:hover .dropdown {
+  display: block;
+}
+
+.dropdown a {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Content below header */
+.content {
+  padding-top: 80px;
+  min-height: 100vh;  /* Make content fill at least full screen */
+}
+
+.container {
+  min-height: 100vh; 
+}
+
+.section {
+  min-height: 500px; 
+}
+
+/* Footer */
+.footer {
+  position: relative; /* Or remove this line */
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+
+.footer a.footer-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a.footer-link:hover {
+  text-decoration: underline;
+}
+body {
+  overflow-x: hidden; /* only hide horizontal overflow */
+  overflow-y: auto;   /* allow vertical scrolling */
+}

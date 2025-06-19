@@ -1,0 +1,74 @@
+
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-5">
+  <h1 class="text-center text-primary mb-4">Contact Us</h1>
+
+  <!-- Intro Message -->
+  <p class="lead text-center mb-4">
+    We’d love to hear from you! Whether you have a question about services, pricing, demos, or anything else — our team is ready to help.
+  </p>
+
+  <!-- Contact Details -->
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <p><i data-lucide="mail"></i> <strong>Email:</strong> <a href="mailto:contact@cloudnest.com">contact@cloudnest.com</a></p>
+      <p><i data-lucide="phone"></i> <strong>Phone:</strong> +91-XXXXXXXXXX</p>
+      <p><i data-lucide="message-square"></i> <strong>Live Chat:</strong> Mon–Fri, 9:00 AM – 6:00 PM IST</p>
+      <p><i data-lucide="map-pin"></i> <strong>Address:</strong> CloudNest HQ, Sector 5, Noida, India</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="col-md-6">
+      <form method="POST" action="">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" name="name" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" name="subject" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea name="message" rows="4" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Map Embed -->
+  <div class="mb-4">
+    <iframe
+      title="Google Map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14013.465122940367!2d77.32095555!3d28.5747908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce430f37ef7a1%3A0x8fdc97d27c01b501!2sSector%205%2C%20Noida!5e0!3m2!1sen!2sin!4v1718789029842!5m2!1sen!2sin"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+
+  <!-- Social Links -->
+  <div class="text-center">
+    <p>Follow us:</p>
+    <a href="#" target="_blank" class="mx-2">LinkedIn</a> |
+    <a href="#" target="_blank" class="mx-2">Twitter</a> |
+    
+  </div>
+</div>
+
+<!-- Load Lucide icons -->
+<script>
+  lucide.createIcons();
+</script>
+
+
+
+{% endblock %}

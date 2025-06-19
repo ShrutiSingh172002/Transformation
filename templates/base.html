@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{% block title %}MyCompany{% endblock %}</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+</head>
+<body>
+
+  <div class="top-bar"></div>
+
+  <header class="header">
+    <div class="navbar-container">
+
+      <!-- Logo -->
+      <div class="logo">
+        <img src="{% static 'image/innovapte_logo.png' %}" alt="Logo" />
+      </div>
+
+      <!-- Navigation + User Menu -->
+      <div class="right-section">
+        <nav class="nav">
+          <a href="/index/">Home</a>
+          <a href="/services/">Services</a>
+          <a href="/contact/">Contact</a>
+          <a href="/about/">About Us</a>
+        </nav>
+        <div class="user-menu">
+          <div class="user-icon"><i class="fa fa-user"></i></div>
+          <div class="dropdown" id="userDropdown">
+            {% if user_authenticated %}
+              <a href="{% url 'logout' %}" id="logoutBtn">Logout</a>
+            {% else %}
+              <a href="#" id="loginBtn">Login</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="content">
+    {% block content %}
+    <!-- Page-specific content will go here -->
+    {% endblock %}
+  </main>
+
+  <footer class="footer">
+    <p>
+      &copy; 2025 My Company. All rights reserved. |
+      <a href="{% url 'privacy_policy' %}" class="footer-link">Privacy Policy</a>
+      <a href="{% url 'terms_conditions' %}" class="footer-link">Terms & Conditions</a>
+    </p>
+  </footer>
+
+</body>
+</html>

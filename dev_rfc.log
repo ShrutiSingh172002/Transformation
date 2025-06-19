@@ -1,0 +1,333 @@
+
+**** Log file opened at 2025-04-23 18:37:09.825627 UTC+05:30 (India Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 12
+Compilation date          : Jul  7 2023 22:54:54
+CPIC library              : 753.2023.07.06 version 3
+NI library                : 40
+Kernel Release            : 753 Patch Level 1216
+Current working directory : D:\Innovapte\Python\Transformation\Application\transformation\Git_Transformation
+Program                   : python
+Process ID                : 10492
+User                      : sandi
+Hardware                  : PC with Windows NT 4x AMD64 Level 6 (Mod 78 Step 3)
+Operating_system          : Windows NT 10.0
+Hostname                  : DESKTOP-USCI9LH
+IP address                : 192.168.1.4
+IPv6 address              : fe80::c3d:814d:60a:6e3d
+Global trace level        : 0
+
+2025-04-23 18:37:09.783129 [01248] >> Info entry
+	Did not find config file D:\Innovapte\Python\Transformation\Application\transformation\Git_Transformation\sapnwrfc.ini.
+2025-04-23 18:37:30.955093 [03708] >> Error entry
+	[Handle: 2890488530464	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '11.11.11.13:3300' not reached
+TIME        Wed Apr 23 18:37:30 2025
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      D:/depot/bas/753_REL/src/base/ni/nixxi.cpp
+LINE        3458
+DETAIL      NiPConnect2: 11.11.11.13:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+2025-04-23 18:37:30.955092 [10484] >> Error entry
+	[Handle: 2888412289136	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '11.11.11.13:3300' not reached
+TIME        Wed Apr 23 18:37:30 2025
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      D:/depot/bas/753_REL/src/base/ni/nixxi.cpp
+LINE        3458
+DETAIL      NiPConnect2: 11.11.11.13:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+2025-04-23 18:37:30.955074 [01248] >> Error entry
+	[Handle: 2890488199456	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '11.11.11.13:3300' not reached
+TIME        Wed Apr 23 18:37:30 2025
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      D:/depot/bas/753_REL/src/base/ni/nixxi.cpp
+LINE        3458
+DETAIL      NiPConnect2: 11.11.11.13:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+2025-04-23 18:37:51.998651 [01248] >> Error entry
+	[Handle: 2888412289216	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '11.11.11.13:3300' not reached
+TIME        Wed Apr 23 18:37:51 2025
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      D:/depot/bas/753_REL/src/base/ni/nixxi.cpp
+LINE        3458
+DETAIL      NiPConnect2: 11.11.11.13:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     4
+
+2025-04-23 18:37:51.998756 [10484] >> Error entry
+	[Handle: 2888412343088	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '11.11.11.13:3300' not reached
+TIME        Wed Apr 23 18:37:51 2025
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      D:/depot/bas/753_REL/src/base/ni/nixxi.cpp
+LINE        3458
+DETAIL      NiPConnect2: 11.11.11.13:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     4
+
+2025-04-23 18:38:24.264508 [17336] >> Error entry
+	[Handle: 2888412343088	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '11.11.11.13:3300' not reached
+TIME        Wed Apr 23 18:38:24 2025
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      D:/depot/bas/753_REL/src/base/ni/nixxi.cpp
+LINE        3458
+DETAIL      NiPConnect2: 11.11.11.13:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+2025-04-23 18:38:24.278521 [13960] >> Error entry
+	[Handle: 2888412312304	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '11.11.11.13:3300' not reached
+TIME        Wed Apr 23 18:38:24 2025
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      D:/depot/bas/753_REL/src/base/ni/nixxi.cpp
+LINE        3458
+DETAIL      NiPConnect2: 11.11.11.13:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+2025-04-23 18:38:24.278515 [11000] >> Error entry
+	[Handle: 2888412327696	ConvID: 	Target: 	SysID: 	SysNr: 	User: 	Codepage: 4103]
+	RfcCommunicationException: Return Value: 20, Code: RFC_COMMUNICATION_FAILURE, Message: 
+LOCATION    CPIC (TCP/IP) on local host with Unicode
+ERROR       partner '11.11.11.13:3300' not reached
+TIME        Wed Apr 23 18:38:24 2025
+RELEASE     753
+COMPONENT   NI (network interface)
+VERSION     40
+RC          -10
+MODULE      D:/depot/bas/753_REL/src/base/ni/nixxi.cpp
+LINE        3458
+DETAIL      NiPConnect2: 11.11.11.13:3300
+SYSTEM CALL connect
+ERRNO       10060
+ERRNO TEXT  WSAETIMEDOUT: Connection timed out
+COUNTER     2
+
+2025-04-23 18:38:27.530577 [17336] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 18:38:27.531967 [17336] >> Error entry
+	[Handle: 2888412304608	ConvID: 42333844	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 18:38:30.358548 [13960] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 18:38:30.358867 [13960] >> Error entry
+	[Handle: 2888412296912	ConvID: 42337707	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+
+**** Log file opened at 2025-04-23 18:40:56.147666 UTC+05:30 (India Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 12
+Compilation date          : Jul  7 2023 22:54:54
+CPIC library              : 753.2023.07.06 version 3
+NI library                : 40
+Kernel Release            : 753 Patch Level 1216
+Current working directory : D:\Innovapte\Python\Transformation\Application\transformation\Git_Transformation
+Program                   : python
+Process ID                : 15580
+User                      : sandi
+Hardware                  : PC with Windows NT 4x AMD64 Level 6 (Mod 78 Step 3)
+Operating_system          : Windows NT 10.0
+Hostname                  : DESKTOP-USCI9LH
+IP address                : 192.168.30.13
+IPv6 address              : fe80::c3d:814d:60a:6e3d
+Global trace level        : 0
+
+2025-04-23 18:40:56.146947 [16972] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 18:40:56.146947 [16300] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 18:40:56.147018 [14652] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 18:40:56.148762 [16972] >> Error entry
+	[Handle: 3128464433584	ConvID: 42484476	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 18:40:56.148748 [16300] >> Error entry
+	[Handle: 3128465455872	ConvID: 42485478	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 18:40:56.148790 [14652] >> Error entry
+	[Handle: 3128509595328	ConvID: 42486479	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 18:40:57.468523 [16972] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 18:40:57.468521 [16300] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 18:40:57.469372 [16972] >> Error entry
+	[Handle: 3128509595328	ConvID: 42488827	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 18:40:57.469428 [16300] >> Error entry
+	[Handle: 3128464433584	ConvID: 42489827	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 18:41:09.112012 [14360] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 18:41:09.112012 [08460] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 18:41:09.112241 [16500] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 18:41:09.113717 [14360] >> Error entry
+	[Handle: 3128509759888	ConvID: 42503468	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 18:41:09.114583 [16500] >> Error entry
+	[Handle: 3128464433584	ConvID: 42502466	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 18:41:09.114854 [08460] >> Error entry
+	[Handle: 3128465315040	ConvID: 42504472	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 18:41:10.457977 [14360] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 18:41:10.457980 [08460] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 18:41:10.459100 [14360] >> Error entry
+	[Handle: 3128464433584	ConvID: 42506812	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 18:41:10.459333 [08460] >> Error entry
+	[Handle: 3128509759888	ConvID: 42507813	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+
+**** Log file opened at 2025-04-23 23:25:47.303546 UTC+05:30 (India Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 12
+Compilation date          : Jul  7 2023 22:54:54
+CPIC library              : 753.2023.07.06 version 3
+NI library                : 40
+Kernel Release            : 753 Patch Level 1216
+Current working directory : D:\Innovapte\Python\Transformation\Application\transformation\Git_Transformation
+Program                   : python
+Process ID                : 17268
+User                      : sandi
+Hardware                  : PC with Windows NT 4x AMD64 Level 6 (Mod 78 Step 3)
+Operating_system          : Windows NT 10.0
+Hostname                  : DESKTOP-USCI9LH
+IP address                : 192.168.30.13
+IPv6 address              : fe80::c3d:814d:60a:6e3d
+Global trace level        : 0
+
+2025-04-23 23:25:47.300649 [09156] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 23:25:47.299703 [03932] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 23:25:47.299703 [01404] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 23:25:47.307770 [03932] >> Error entry
+	[Handle: 2776299065152	ConvID: 59699572	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 23:25:47.307945 [01404] >> Error entry
+	[Handle: 2776445986752	ConvID: 59700572	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 23:25:47.307945 [09156] >> Error entry
+	[Handle: 2776298823312	ConvID: 59701573	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 23:25:48.660375 [01404] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 23:25:48.661105 [01404] >> Error entry
+	[Handle: 2776445924240	ConvID: 59704012	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 23:25:49.252068 [03932] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 23:25:49.252359 [03932] >> Error entry
+	[Handle: 2776298823312	ConvID: 59705596	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 23:26:01.135595 [16548] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 23:26:01.135601 [04696] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 23:26:01.135893 [08688] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 23:26:01.136013 [16548] >> Error entry
+	[Handle: 2776298557472	ConvID: 59718490	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 23:26:01.136147 [04696] >> Error entry
+	[Handle: 2776445866096	ConvID: 59720500	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 23:26:01.136275 [08688] >> Error entry
+	[Handle: 2776445708144	ConvID: 59719497	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 23:26:02.477124 [16548] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 23:26:02.478260 [04696] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 482
+2025-04-23 23:26:02.478475 [16548] >> Error entry
+	[Handle: 2776298557472	ConvID: 59722826	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+2025-04-23 23:26:02.479246 [04696] >> Error entry
+	[Handle: 2776445708144	ConvID: 59723827	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcLogonException: Key: RFC_LOGON_FAILURE, Code: RFC_LOGON_FAILURE, Message: Logon not possible (error in license check)
+
+**** Log file opened at 2025-05-12 06:44:58.532389 UTC-07:00 (Pacific Standard Time), Encoding UTF-8
+NW RFC Library: SDK variant, Release 750 Patch Level 12
+Compilation date          : Jul  7 2023 22:54:54
+CPIC library              : 753.2023.07.06 version 3
+NI library                : 40
+Kernel Release            : 753 Patch Level 1216
+Current working directory : C:\DataVapte\Git_Transformation
+Program                   : python
+Process ID                : 08776
+User                      : Rinku
+Hardware                  : PC with Windows NT 2x AMD64 Level 23 (Mod 49 Step 0)
+Operating_system          : Windows NT 10.0
+Hostname                  : INNOSQL
+IP address                : 11.11.11.31
+IPv6 address              : fe80::bd62:4b88:36a:17d2
+Global trace level        : 0
+
+2025-05-12 06:44:58.527665 [03680] >> Error entry
+	Error in receive: 18, no SAP ErrInfo available, 588
+2025-05-12 06:44:58.535934 [03680] >> Error entry
+	[Handle: 1848154908048	ConvID: 86210344	Target: erpserv1	SysID: SE1	SysNr: 00	User: SANDIP	Client: 100	Language: E	Codepage: 4103]
+	RfcSystemException: Key: ASSIGN_CASTING_UNKNOWN_TYPE, Code: RFC_ABAP_RUNTIME_FAILURE, Message: The specified type (csks) is unknown.
